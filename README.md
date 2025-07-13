@@ -14,13 +14,15 @@ Telegram-бот для автоматизации ответов на отзыв
    ```bash
    pip install -r requirements.txt
    ```
-3. Запустите бота:
+3. Создайте файл `.env` в корне проекта на основе `.env.example` и заполните свои ключи.
+4. Запустите бота:
    ```bash
-   python bot/main.py
+   python main.py
    ```
 
 ## Структура проекта
-- `bot/` — логика Telegram-бота
+- `main.py` — главный исполняемый файл Telegram-бота
+- `bot/` — логика Telegram-бота (обработчики, клавиатуры и т.д.)
 - `wb_api/` — работа с Wildberries API
 - `ai/` — генерация ответов через OpenAI
 - `db/` — работа с Supabase
