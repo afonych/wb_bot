@@ -102,3 +102,6 @@ cython_debug/
 # dotenv
 .env
 .env.* 
+
+github-actions-key
+github-actions-key.pub
