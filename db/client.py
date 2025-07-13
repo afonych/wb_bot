@@ -6,7 +6,7 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY", "")  # Лучше хранить в .en
 
 
 def get_supabase() -> Client:
-    print("SUPABASE_URL:", SUPABASE_URL, "SUPABASE_KEY:", SUPABASE_KEY)
+    # print("SUPABASE_URL:", SUPABASE_URL, "SUPABASE_KEY:", SUPABASE_KEY)
 
     if not SUPABASE_URL or not SUPABASE_KEY:
         raise ValueError("Supabase URL or KEY not set")
