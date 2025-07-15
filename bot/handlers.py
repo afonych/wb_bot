@@ -25,7 +25,7 @@ async def send_welcome(message: types.Message, state: FSMContext):
     if not user.data:
         supabase.table("wb_users").insert({"telegram_id": telegram_id}).execute()
     kb = InlineKeyboardMarkup().add(
-        InlineKeyboardButton("Ввести API ключ WB", callback_data="enter_wb_key")
+        InlineKeyboardButton("Ввести API-ключ WB", callback_data="enter_wb_key")
     )
     await message.answer(load_welcome(), reply_markup=kb, parse_mode="HTML")
 
