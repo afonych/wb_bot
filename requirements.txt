@@ -1,5 +1,5 @@
 aiogram==2.25.2
 supabase
-openai
+openai 
 apscheduler
 python-dotenv 
